@@ -12,7 +12,7 @@ const Gallery = () => {
             fotos: [
                 {
                     id: 1,
-                    src: '/assets/images/gallery/foto1.jpg',
+                    src: '/assets/images/gallery/ejemplo.webp',
                     alt: 'Desfile Carnaval 2024',
                     title: 'Desfile Principal',
                     year: '2024'

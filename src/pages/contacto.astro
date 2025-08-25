@@ -3,7 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import ContactForm from '../components/ContactForm.jsx';
 ---
 
-<BaseLayout title="Contacto - Peña Barrio Fino" description="Contacta con la Comparsa Barrio Fino. Información, dudas o únete a nuestra familia carnavalesca">
+<BaseLayout title="Contacto - Peña Barrio Fino"
+            description="Contacta con la Comparsa Barrio Fino. Información, dudas o únete a nuestra familia carnavalesca">
     <!-- Hero Section -->
     <section class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <div class="container mx-auto px-4">
@@ -21,12 +22,13 @@ import ContactForm from '../components/ContactForm.jsx';
     <!-- Contact Info Cards -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
-                <!-- Teléfono -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
+                <!-- Teléfono aun no hay
                 <div data-aos="fade-up" data-aos-delay="100" class="text-center p-6 bg-gray-50 rounded-lg">
                     <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                         </svg>
                     </div>
                     <h3 class="text-lg font-semibold mb-2">Teléfono</h3>
@@ -34,19 +36,20 @@ import ContactForm from '../components/ContactForm.jsx';
                     <a href="tel:+34123456789" class="text-black font-medium hover:underline">
                         +34 123 456 789
                     </a>
-                </div>
+                </div> -->
 
                 <!-- Email -->
                 <div data-aos="fade-up" data-aos-delay="200" class="text-center p-6 bg-gray-50 rounded-lg">
                     <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
                     </div>
                     <h3 class="text-lg font-semibold mb-2">Correo Electrónico</h3>
                     <p class="text-gray-600 mb-4">Envíanos un email</p>
-                    <a href="mailto:info@barriofino.es" class="text-black font-medium hover:underline">
-                        info@barriofino.es
+                    <a href="mailto:aj.barrifino2023@gmail.com" class="text-black font-medium hover:underline">
+                        aj.barrifino2023@gmail.com
                     </a>
                 </div>
 
@@ -54,13 +57,15 @@ import ContactForm from '../components/ContactForm.jsx';
                 <div data-aos="fade-up" data-aos-delay="300" class="text-center p-6 bg-gray-50 rounded-lg">
                     <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                         </svg>
                     </div>
                     <h3 class="text-lg font-semibold mb-2">Ubicación</h3>
-                    <p class="text-gray-600 mb-4">Nuestro local de ensayos</p>
-                    <p class="text-black font-medium">Plaza del Carnaval, 123<br>28001 Madrid</p>
+                    <p class="text-gray-600 mb-4">Nuestra Ubicación</p>
+                    <p class="text-black font-medium">Calle Obispo Almarcha<br>03350, Alicante</p>
                 </div>
             </div>
 
@@ -74,7 +79,7 @@ import ContactForm from '../components/ContactForm.jsx';
                     </p>
                 </div>
 
-                <ContactForm client:load />
+                <ContactForm client:load/>
             </div>
         </div>
     </section>
@@ -86,28 +91,32 @@ import ContactForm from '../components/ContactForm.jsx';
                 <div class="text-center mb-12">
                     <h2 data-aos="fade-up" class="text-3xl font-bold text-black mb-4">¿Dónde Encontrarnos?</h2>
                     <p data-aos="fade-up" data-aos-delay="100" class="text-gray-600">
-                        Nuestro local de ensayos está ubicado en el corazón de la ciudad
+                        Nuestra ubicación de la peña se encuentra en Virgen del Camino.
                     </p>
                 </div>
 
                 <!-- Google Maps Embed -->
+
                 <div data-aos="fade-up" data-aos-delay="200" class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <!-- Placeholder para Google Maps -->
+                    <!-- Placeholder para Google Maps
                     <div class="h-96 bg-gray-300 flex items-center justify-center">
                         <div class="text-center">
-                            <svg class="w-16 h-16 text-gray-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <svg class="w-16 h-16 text-gray-500 mx-auto mb-4" fill="none" stroke="currentColor"
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                             </svg>
                             <p class="text-gray-500">Mapa de Google Maps</p>
                             <p class="text-sm text-gray-400 mt-2">Plaza del Carnaval, 123 - Madrid</p>
                         </div>
-                    </div>
+                    </div>-->
 
                     <!-- Para implementar Google Maps real, descomenta esto: -->
-                    <!--
+
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.4!2d-3.7037902!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDI1JzAwLjQiTiAzwrA0MicxMy42Ilc!5e0!3m2!1ses!2ses!4v1234567890"
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3136.9160775957635!2d-0.9327722!3d38.1653899!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6397bd71cbc5cf%3A0x1ca465d9f33a7654!2sC.%20Obispo%20Almarcha%2C%2003350%2C%20Alicante!5e0!3m2!1ses!2ses!4v1756118575710!5m2!1ses!2ses"
                       width="100%"
                       height="400"
                       style="border:0;"
@@ -115,10 +124,11 @@ import ContactForm from '../components/ContactForm.jsx';
                       loading="lazy"
                       referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
-                    -->
+
                 </div>
 
-                <!-- Información adicional del local -->
+                <!-- Información adicional del local aun no hay
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                     <div data-aos="fade-up" data-aos-delay="300" class="bg-white p-6 rounded-lg shadow">
                         <h3 class="text-lg font-semibold text-black mb-4">Horarios de Ensayo</h3>
@@ -158,7 +168,7 @@ import ContactForm from '../components/ContactForm.jsx';
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -170,7 +180,7 @@ import ContactForm from '../components/ContactForm.jsx';
                 <div class="text-center mb-12">
                     <h2 data-aos="fade-up" class="text-3xl font-bold text-black mb-4">Preguntas Frecuentes</h2>
                     <p data-aos="fade-up" data-aos-delay="100" class="text-gray-600">
-                        Respuestas a las consultas más comunes sobre Barrio Fino
+                        Respuestas a las consultas más comunes sobre BarrioFino
                     </p>
                 </div>
 
@@ -181,9 +191,8 @@ import ContactForm from '../components/ContactForm.jsx';
                             ¿Cómo puedo unirme a la comparsa?
                         </h3>
                         <p class="text-gray-600">
-                            Puedes contactarnos a través del formulario, por teléfono o viniendo directamente
-                            a nuestros ensayos. Realizamos pruebas de acceso durante septiembre y octubre
-                            para la temporada siguiente. No necesitas experiencia previa, solo ganas de
+                            Puedes contactarnos a través del formulario, por correo o preguntando a algún participante.
+                            El acceso del 1 al 31 de octubre para la temporada siguiente. Solo necesitas solo ganas de
                             divertirte y formar parte de nuestra familia.
                         </p>
                     </div>
@@ -194,9 +203,9 @@ import ContactForm from '../components/ContactForm.jsx';
                             ¿Cuánto cuesta participar en la comparsa?
                         </h3>
                         <p class="text-gray-600">
-                            El coste varía según la modalidad de participación. Incluye el alquiler del traje,
-                            materiales de maquillaje y accesorios. Los miembros de la comparsa tienen descuentos
-                            especiales. Contacta con nosotros para recibir información detallada sobre precios.
+                            El coste varía según la cantidad de participantes. El unirte a la peña incluye la camiseta
+                            serigrafiada con tu nombre, el polo oficial y el pañuelo oficial. Los miembros de la comparsa
+                            tienen descuentos especiales. Contacta con nosotros para recibir información detallada sobre precios.
                         </p>
                     </div>
 
@@ -206,21 +215,21 @@ import ContactForm from '../components/ContactForm.jsx';
                             ¿Hay límite de edad para participar?
                         </h3>
                         <p class="text-gray-600">
-                            ¡Por supuesto que no! Barrio Fino es una comparsa familiar donde participan
-                            desde los más pequeños (a partir de 4 años) hasta adultos de todas las edades.
-                            Tenemos diferentes grupos y modalidades adaptadas a cada rango de edad.
+                            ¡Claro que no! En Barrio Fino somos una gran familia donde pueden participar jóvenes desde
+                            los 16 años hasta adultos de máximo 30 años. Hay grupos y actividades pensadas para cada edad,
+                            así que todos tienen su lugar y siempre eres bienvenido.
                         </p>
                     </div>
 
                     <!-- FAQ Item 4 -->
                     <div data-aos="fade-up" data-aos-delay="500" class="bg-gray-50 rounded-lg p-6">
                         <h3 class="text-lg font-semibold text-black mb-3">
-                            ¿Qué actividades realizáis además del carnaval?
+                            ¿Qué actividades realizáis además de la romería?
                         </h3>
                         <p class="text-gray-600">
-                            Durante todo el año organizamos eventos culturales, talleres de música y baile,
-                            actividades benéficas y participamos en festivales y eventos de la ciudad.
-                            También tenemos una escuela de formación artística abierta todo el año.
+                            Durante todo el año organizamos diferentes eventos culturales, talleres de música y baile, celebramos
+                            las fiestas del pueblo y organizamos diferentes fiestas a lo largo del año. Y para los participantes,
+                            tenemos comidas y cenas especiales para fortalecer la unión del grupo.
                         </p>
                     </div>
                 </div>
@@ -237,22 +246,105 @@ import ContactForm from '../components/ContactForm.jsx';
             </p>
 
             <div data-aos="fade-up" data-aos-delay="200" class="flex justify-center space-x-6">
-                <a href="#" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
-                    <span class="text-xl">📘</span>
+                <!-- Facebook -->
+                <a href="https://facebook.com/AJ.Barriofino"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="Facebook Barrio Fino"
+                   class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center
+                    hover:bg-blue-600 hover:scale-110 hover:shadow-lg
+                    transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-white" viewBox="0 0 24 24"
+                         fill="currentColor">
+                        <path d="M22.675 0h-21.35C.6 0 0 .6 0 1.326v21.348C0
+                                 23.4.6 24 1.326 24H12.82v-9.294H9.692V11.01h3.128V8.413c0-3.1
+                                 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504
+                                 0-1.797.715-1.797 1.763v2.313h3.587l-.467
+                                 3.696h-3.12V24h6.116C23.4 24 24 23.4
+                                 24 22.674V1.326C24 .6 23.4 0 22.675 0"/>
+                    </svg>
                 </a>
-                <a href="#" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
-                    <span class="text-xl">📷</span>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/barrioffinoo"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="Instagram Barrio Fino"
+                   class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center
+                    hover:bg-gradient-to-tr hover:from-pink-500 hover:to-yellow-500
+                    hover:scale-110 hover:shadow-lg transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-white" viewBox="0 0 24 24"
+                         fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012
+                                 4.85.07 1.366.062 2.633.334
+                                 3.608 1.308.975.974 1.246 2.242
+                                 1.308 3.608.058 1.266.07 1.646.07
+                                 4.85s-.012 3.584-.07 4.85c-.062
+                                 1.366-.334 2.633-1.308 3.608-.974.975-2.242
+                                 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.974-1.246-2.242-1.308-3.608C2.175
+                                 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633
+                                 1.308-3.608C4.516 2.497 5.784 2.226 7.15
+                                 2.163 8.416 2.105 8.796 2.163 12
+                                 2.163zm0 3.675a6.162 6.162 0 1 0 0
+                                 12.324 6.162 6.162 0 0 0 0-12.324zm0
+                                 10.162a3.999 3.999 0 1 1 0-7.998 3.999
+                                 3.999 0 0 1 0 7.998zm6.406-11.845a1.44
+                                 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0
+                                 0-2.881z"/>
+                    </svg>
                 </a>
-                <a href="#" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
-                    <span class="text-xl">🐦</span>
-                </a>
-                <a href="#" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
-                    <span class="text-xl">📺</span>
-                </a>
+
+                <!-- TikTok aun no hay
+                <a href="https://tiktok.com/@barrioffinoo"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="TikTok Barrio Fino"
+                   class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center
+          hover:bg-white/20 hover:scale-110 hover:shadow-lg transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 32 32"
+                         class="w-7 h-7 text-white"
+                         fill="currentColor">
+                        <path d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054
+                                 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247
+                                 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082
+                                 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012
+                                 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707
+                                 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014
+                                 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040
+                                 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862
+                                 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604
+                                 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868
+                                 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21
+                                 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332
+                                 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001
+                                 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372
+                                 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237
+                                 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060
+                                 0.025-15.083z"/>
+                    </svg>
+                </a>-->
+
+                <!-- X (Twitter) aun no hay
+                <a href="https://twitter.com/barrioffinoo"
+                   target="_blank"
+                   rel="noopener"
+                   aria-label="X (Twitter) Barrio Fino"
+                   class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center
+                    hover:bg-gray-900 hover:scale-110 hover:shadow-lg transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-white" viewBox="0 0 24 24"
+                         fill="currentColor">
+                        <path d="M18.244 2H21.5l-7.52 8.571L22.75
+                                 22h-6.935l-5.437-6.571L4.25
+                                 22H1l7.92-9.029L1.25
+                                 2h7.07l4.927 5.943L18.244 2zM16.55
+                                 20h1.94L8.24 4h-1.97L16.55 20z"/>
+                    </svg>
+                </a>-->
             </div>
 
             <p class="text-gray-400 text-sm mt-8">
-                @BarrioFinoComparsa en todas las plataformas
+                @barrioffinoo en todas las plataformas
             </p>
         </div>
     </section>
