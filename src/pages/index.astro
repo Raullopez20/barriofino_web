@@ -2,13 +2,13 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Inicio - Peña Barrio Fino">
+<BaseLayout title="Inicio - Peña BarrioFino">
     <!-- Hero Section -->
     <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100">
         <div class="container mx-auto px-4 text-center">
 
             <div class="w-64 h-64 rounded-full flex items-center justify-center mx-auto mb-8 bg-black">
-                <img src={`${import.meta.env.BASE_URL}icono.webp`} alt="Logo Barrio Fino" class="w-60 h-60 object-contain" />
+                <img src={`${import.meta.env.BASE_URL}icono.webp`} alt="Logo BarrioFino" class="w-60 h-60 object-contain" />
             </div>
 
                 <h1 class="text-5xl md:text-7xl font-bold text-black mb-6">
@@ -16,7 +16,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 </h1>
 
                 <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                    Tradición, arte y pasión en cada desfile. La comparsa que llena de vida el carnaval.
+                    Donde la energía, la fiesta y la diversión hacen que cada evento sea inolvidable.
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -38,13 +38,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 data-aos="fade-up" class="text-3xl md:text-4xl font-bold text-black mb-8">
-                    Más que una comparsa, somos familia
+                    Más que una peña, somos familia
                 </h2>
 
                 <p data-aos="fade-up" data-aos-delay="100" class="text-lg text-gray-600 mb-12 leading-relaxed">
-                    Desde nuestros inicios, Barrio Fino se ha caracterizado por llevar la elegancia y el arte
-                    a cada actuación. Nuestros trajes, coreografías y música crean una experiencia única
-                    que emociona a grandes y pequeños.
+                    Desde nuestros inicios, BarrioFino se ha caracterizado por llevar la elegancia y la energía en cada fiesta.
+                    Nuestras fiestas y música crean una experiencia única en la que no puedes faltar.
                 </p>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -53,23 +52,23 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                             <span class="text-white text-2xl">🎭</span>
                         </div>
                         <h3 class="text-xl font-semibold mb-2">Tradición</h3>
-                        <p class="text-gray-600">Años de historia y tradición carnavalesca que se transmite de generación en generación.</p>
+                        <p class="text-gray-600">Somos una peña joven, con menos de 2 años de historia, pero con muchas ganas de crear nuevas tradiciones.</p>
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="300" class="text-center">
                         <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span class="text-white text-2xl">🎨</span>
+                            <span class="text-white text-2xl">💡</span>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">Arte</h3>
-                        <p class="text-gray-600">Cada detalle de nuestros trajes y coreografías está cuidadosamente diseñado.</p>
+                        <h3 class="text-xl font-semibold mb-2">Innovación</h3>
+                        <p class="text-gray-600">Buscamos siempre nuevas formas de sorprender y mejorar cada evento que realizamos.</p>
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="400" class="text-center">
                         <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
                             <span class="text-white text-2xl">❤️</span>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">Pasión</h3>
-                        <p class="text-gray-600">La pasión por el carnaval nos une y nos impulsa a dar lo mejor en cada actuación.</p>
+                        <h3 class="text-xl font-semibold mb-2">Pasión que nos impulsa</h3>
+                        <p class="text-gray-600">La pasión por la peña nos une, inspira y motiva a dar lo mejor en cada fiesta y momento compartido.</p>
                     </div>
                 </div>
             </div>
@@ -92,40 +91,36 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 <!-- Evento 1 -->
                 <div data-aos="fade-up" data-aos-delay="200" class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                     <div class="h-48 bg-gray-300 flex items-center justify-center">
-                        <!-- Placeholder para imagen del evento -->
-                        <span class="text-gray-500">Imagen del evento</span>
-                    </div>
+                        <img src={`${import.meta.env.BASE_URL}assets/images/events/dj-senseky-mas-pizza-party.webp`} alt="Dj Senseky + Pizza Party" class="object-cover w-full h-full" />                    </div>
                     <div class="p-6">
-                        <div class="text-sm text-gray-500 mb-2">15 de Febrero, 2025</div>
-                        <h3 class="text-xl font-semibold mb-2">Desfile de Carnaval</h3>
-                        <p class="text-gray-600 mb-4">Salida oficial en el gran desfile de carnaval de la ciudad.</p>
-                        <div class="text-sm text-gray-500">📍 Plaza Mayor</div>
+                        <div class="text-sm text-gray-500 mb-2">6 de Septiembre, 2025 &bull; 00:00</div>
+                        <h3 class="text-xl font-semibold mb-2">Dj Senseky + Pizza Party</h3>
+                        <p class="text-gray-600 mb-4">Noche de fiesta con Dj Senseky, no te lo pierdas. Pizza para todos a las 5:00am</p>
+                        <div class="text-sm text-gray-500">📍 Peña BarrioFino</div>
                     </div>
                 </div>
 
                 <!-- Evento 2 -->
                 <div data-aos="fade-up" data-aos-delay="300" class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                     <div class="h-48 bg-gray-300 flex items-center justify-center">
-                        <span class="text-gray-500">Imagen del evento</span>
-                    </div>
+                        <img src={`${import.meta.env.BASE_URL}assets/images/events/actuacion-möka-y-tente-mas-dj-julito.webp`} alt="Acttuación de MÖKA & TENTE + Dj Julito" class="object-cover w-full h-full" />                    </div>
                     <div class="p-6">
-                        <div class="text-sm text-gray-500 mb-2">10 de Febrero, 2025</div>
-                        <h3 class="text-xl font-semibold mb-2">Ensayo General</h3>
-                        <p class="text-gray-600 mb-4">Ensayo abierto al público antes del gran desfile.</p>
-                        <div class="text-sm text-gray-500">📍 Local de la Comparsa</div>
+                        <div class="text-sm text-gray-500 mb-2">12 de Septiembre, 2025 &bull; 00:30</div>
+                        <h3 class="text-xl font-semibold mb-2">Acttuación de MÖKA & TENTE + Dj Julito</h3>
+                        <p class="text-gray-600 mb-4">Noche de fiesta con la actuación de MÖKA & TENTE y despues Dj Julito para seguir la fiesta.</p>
+                        <div class="text-sm text-gray-500">📍 Peña BarrioFino</div>
                     </div>
                 </div>
 
                 <!-- Evento 3 -->
                 <div data-aos="fade-up" data-aos-delay="400" class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                     <div class="h-48 bg-gray-300 flex items-center justify-center">
-                        <span class="text-gray-500">Imagen del evento</span>
-                    </div>
+                        <img src={`${import.meta.env.BASE_URL}assets/images/events/dj-velo-mas-tatuador-invitado.webp`} alt="Dj Velo + Tatuador Invitado" class="object-cover w-full h-full" />                    </div>
                     <div class="p-6">
-                        <div class="text-sm text-gray-500 mb-2">1 de Marzo, 2025</div>
-                        <h3 class="text-xl font-semibold mb-2">Concurso de Agrupaciones</h3>
-                        <p class="text-gray-600 mb-4">Participación en el concurso oficial de carnaval.</p>
-                        <div class="text-sm text-gray-500">📍 Teatro Principal</div>
+                        <div class="text-sm text-gray-500 mb-2">13 de Septiembre, 2025 &bull; 01:00</div>
+                        <h3 class="text-xl font-semibold mb-2">Dj Velo + Tatuador Invitado</h3>
+                        <p class="text-gray-600 mb-4">Noche de fiesta con Dj Velo y tatuador invitado para los que quieran hacerse un tatuaje.</p>
+                        <div class="text-sm text-gray-500">📍 Peña BarrioFino</div>
                     </div>
                 </div>
             </div>
