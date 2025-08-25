@@ -1,0 +1,3 @@
+Hemos metido la dependencia de email-js en el proyecto, para en un
+futuro poder enviar emails desde el front sin necesidad de backend.
+
