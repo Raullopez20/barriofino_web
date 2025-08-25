@@ -8,12 +8,12 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
     site: 'https://Raullopez20.github.io',
     base: '/barriofino_web/',
+    output: 'static',
     integrations: [
         react(),
         tailwind(),
         [sitemap()]
     ],
-    output: 'static',
     build: {
         assets: 'assets'
     }
