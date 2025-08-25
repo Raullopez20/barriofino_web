@@ -1,0 +1,150 @@
+---
+export interface Props {
+    title: string;
+    description?: string;
+}
+
+const { title, description = "Comparsa Barrio Fino - Carnaval con estilo" } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-900 font-inter">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+            <!-- Logo -->
+            <a href={`${import.meta.env.BASE_URL}`} class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold text-sm">BF</span>
+                </div>
+                <span class="font-semibold text-lg">Barrio Fino</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href={`${import.meta.env.BASE_URL}`} class={`hover:text-gray-600 transition-colors ${currentPath === '/' ? 'text-black font-medium' : 'text-gray-700'}`}>Inicio</a>
+                <a href={`${import.meta.env.BASE_URL}historia`} class={`hover:text-gray-600 transition-colors ${currentPath === '/historia' ? 'text-black font-medium' : 'text-gray-700'}`}>Historia</a>
+                <a href={`${import.meta.env.BASE_URL}fotos-videos`} class={`hover:text-gray-600 transition-colors ${currentPath === '/fotos-videos' ? 'text-black font-medium' : 'text-gray-700'}`}>Fotos y Vídeos</a>
+                <a href={`${import.meta.env.BASE_URL}eventos`} class={`hover:text-gray-600 transition-colors ${currentPath === '/eventos' ? 'text-black font-medium' : 'text-gray-700'}`}>Eventos</a>
+                <a href={`${import.meta.env.BASE_URL}contacto`} class={`hover:text-gray-600 transition-colors ${currentPath === '/contacto' ? 'text-black font-medium' : 'text-gray-700'}`}>Contacto</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-200">
+            <div class="flex flex-col space-y-4">
+                <a href={`${import.meta.env.BASE_URL}`} class="text-gray-700 hover:text-black transition-colors">Inicio</a>
+                <a href={`${import.meta.env.BASE_URL}historia`} class="text-gray-700 hover:text-black transition-colors">Historia</a>
+                <a href={`${import.meta.env.BASE_URL}fotos-videos`} class="text-gray-700 hover:text-black transition-colors">Fotos y Vídeos</a>
+                <a href={`${import.meta.env.BASE_URL}eventos`} class="text-gray-700 hover:text-black transition-colors">Eventos</a>
+                <a href={`${import.meta.env.BASE_URL}contacto`} class="text-gray-700 hover:text-black transition-colors">Contacto</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<main class="pt-16">
+    <slot />
+</main>
+
+<!-- Footer -->
+<footer class="bg-black text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Logo y descripción -->
+            <div>
+                <div class="flex items-center space-x-2 mb-4">
+                    <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                        <span class="text-black font-bold text-sm">BF</span>
+                    </div>
+                    <span class="font-semibold text-lg">Barrio Fino</span>
+                </div>
+                <p class="text-gray-400 text-sm">
+                    Comparsa de carnaval con tradición y estilo. Llevamos la alegría y el arte a cada rincón de la ciudad.
+                </p>
+            </div>
+
+            <!-- Enlaces rápidos -->
+            <div>
+                <h3 class="font-semibold mb-4">Enlaces Rápidos</h3>
+                <div class="space-y-2">
+                    <a href={`${import.meta.env.BASE_URL}`} class="text-gray-400 hover:text-white transition-colors text-sm block">Inicio</a>
+                    <a href={`${import.meta.env.BASE_URL}historia`} class="text-gray-400 hover:text-white transition-colors text-sm block">Historia</a>
+                    <a href={`${import.meta.env.BASE_URL}eventos`} class="text-gray-400 hover:text-white transition-colors text-sm block">Eventos</a>
+                    <a href={`${import.meta.env.BASE_URL}contacto`} class="text-gray-400 hover:text-white transition-colors text-sm block">Contacto</a>
+                </div>
+            </div>
+
+            <!-- Contacto -->
+            <div>
+                <h3 class="font-semibold mb-4">Contacto</h3>
+                <div class="space-y-2 text-sm text-gray-400">
+                    <p>📧 info@barriofino.es</p>
+                    <p>📱 +34 123 456 789</p>
+                    <p>📍 Plaza del Carnaval, 123</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="border-gray-800 my-8">
+
+        <div class="text-center text-sm text-gray-400">
+            <p>&copy; 2025 Comparsa Barrio Fino. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- AOS JavaScript -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js" is:global></script>
+<script is:global>
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.AOS) {
+      window.AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 50
+      });
+    }
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton?.addEventListener('click', () => {
+      mobileMenu?.classList.toggle('hidden');
+    });
+  });
+</script>
+</body>
+</html>
+
+<style>
+    .font-inter {
+        font-family: 'Inter', sans-serif;
+    }
+</style>

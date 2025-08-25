@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="404 - Página no encontrada">
+    <section class="flex flex-col items-center justify-center min-h-[70vh] text-center py-10 px-4 sm:py-16 sm:px-8 bg-white">
+        <div class="flex flex-col items-center mb-6 sm:mb-8" data-aos="fade-down">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-black rounded-full flex items-center justify-center mb-3 sm:mb-4 shadow-lg">
+                <span class="text-white font-bold text-2xl sm:text-3xl">BF</span>
+            </div>
+            <span class="font-semibold text-lg sm:text-xl text-gray-900">Barrio Fino</span>
+        </div>
+        <h1 class="text-5xl sm:text-6xl font-extrabold text-gray-900 mb-3 sm:mb-4" data-aos="zoom-in">404</h1>
+        <h2 class="text-lg sm:text-2xl font-semibold text-gray-800 mb-2" data-aos="fade-up">¡Ups! Página no encontrada</h2>
+        <p class="text-gray-500 mb-6 sm:mb-8 max-w-xs sm:max-w-md mx-auto text-base sm:text-lg" data-aos="fade-up" data-aos-delay="100">La página que buscas no existe, ha sido movida o nunca ha existido. Pero la fiesta sigue en Barrio Fino. ¿Quieres volver al inicio o contactar con nosotros?</p>
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-xs sm:max-w-none mx-auto justify-center" data-aos="fade-up" data-aos-delay="200">
+            <a href={`${import.meta.env.BASE_URL}`} class="px-6 py-3 sm:px-8 sm:py-3 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors shadow-md text-base sm:text-lg">Volver al inicio</a>
+            <a href={`${import.meta.env.BASE_URL}contacto`} class="px-6 py-3 sm:px-8 sm:py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors shadow-md text-base sm:text-lg">Contactar</a>
+        </div>
+        <div class="mt-16 sm:mt-24 opacity-70" data-aos="fade-up" data-aos-delay="300">
+            <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="Logo Barrio Fino" class="mx-auto w-12 h-12 sm:w-16 sm:h-16" />
+        </div>
+    </section>
+</BaseLayout>
