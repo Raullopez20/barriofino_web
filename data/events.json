@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "Cine de Verano",
+    "date": "2025-09-04",
+    "time": "21:30",
+    "location": "Peña BarrioFino",
+    "description": "Trae tu cena y tumbona para disfrutar de una peli con la peña",
+    "image": "/assets/images/events/ejemplo.webp"
+  },
+  {
+    "id": 2,
+    "title": "Karaoke",
+    "date": "2025-09-05",
+    "time": "23:00",
+    "location": "Peña BarrioFino",
+    "description": "Ven a cantar con nosotros y pasar un buen rato",
+    "image": "/assets/images/events/ejemplo.webp"
+  },
+  {
+      "id": 3,
+      "title": "Desfile de Disfraces",
+      "date": "2025-09-06",
+      "time": "19:00",
+      "location": "Plaza del Pueblo",
+      "description": "Participa en nuestro disfraz de mario kart con entrega de premios al mejor disfraz.",
+      "image": "/assets/images/events/ejemplo.webp"
+  },
+  {
+      "id": 4,
+      "title": "Dj Senseky + Pizza Party",
+      "date": "2025-09-06",
+      "time": "00:00",
+      "location": "Peña BarrioFino",
+      "description": "Noche de fiesta con Dj Senseky, no te lo pierdas. Pizza para todos a las 5:00am",
+      "image": "/assets/images/events/dj-senseky-mas-pizza-party.webp"
+  },
+  {
+      "id": 5,
+      "title": "Acttuación de MÖKA & TENTE + Dj Julito",
+      "date": "2025-09-12",
+      "time": "00:30",
+      "location": "Peña BarrioFino",
+      "description": "Noche de fiesta con la actuación de MÖKA & TENTE y despues Dj Julito para seguir la fiesta.",
+      "image": "/assets/images/events/actuacion-möka-y-tente-mas-dj-julito.webp"
+  },
+  {
+      "id": 6,
+      "title": "Dj Velo + Tatuador Invitado",
+      "date": "2025-09-13",
+      "time": "01:00",
+      "location": "Peña BarrioFino",
+      "description": "Noche de fiesta con Dj Velo y tatuador invitado para los que quieran hacerse un tatuaje.",
+      "image": "/assets/images/events/dj-velo-mas-tatuador-invitado.webp"
+  }
+]
+
