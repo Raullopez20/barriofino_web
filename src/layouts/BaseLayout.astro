@@ -4,7 +4,7 @@ export interface Props {
     description?: string;
 }
 
-const { title, description = "Peña Barrio Fino - Carnaval con estilo" } = Astro.props;
+const { title, description = "Peña BarrioFino - Fiesta con estilo" } = Astro.props;
 const currentPath = Astro.url.pathname;
 ---
 
@@ -33,7 +33,7 @@ const currentPath = Astro.url.pathname;
             <!-- Logo -->
             <a href={`${import.meta.env.BASE_URL}`} class="flex items-center space-x-2">
                 <div class="w-12 h-12 bg-black rounded-full flex items-center justify-center">
-                    <img src={`${import.meta.env.BASE_URL}icono.webp`} alt="Logo Barrio Fino" class="w-10 h-10 rounded-full" />
+                    <img src={`${import.meta.env.BASE_URL}icono.webp`} alt="Logo BarrioFino" class="w-10 h-10 rounded-full" />
                 </div>
                 <span class="font-semibold text-lg">Peña BarrioFino</span>
             </a>
@@ -81,12 +81,12 @@ const currentPath = Astro.url.pathname;
             <div>
                 <div class="flex items-center space-x-2 mb-4">
                     <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                        <img src={`${import.meta.env.BASE_URL}icono.webp`} alt="Logo Barrio Fino" class="w-10 h-10 rounded-full" />
+                        <img src={`${import.meta.env.BASE_URL}icono.webp`} alt="Logo BarrioFino" class="w-10 h-10 rounded-full" />
                     </div>
                     <span class="font-semibold text-lg">Peña BarrioFino</span>
                 </div>
                 <p class="text-gray-400 text-sm">
-                    Peña de carnaval con tradición y estilo. Llevamos la alegría y el arte a cada rincón de la ciudad.
+                    Peña de pueblo con tradición y estilo. Llevamos la alegría y la energia a cada rincón de la ciudad.
                 </p>
             </div>
 
@@ -107,7 +107,7 @@ const currentPath = Astro.url.pathname;
                 <div class="space-y-2 text-sm text-gray-400">
                     <p>📧 aj.barrifino2023@gmail.com</p>
                     <!-- <p>📞 +34 123 456 789</p> -->
-                    <p>📍 Plaza del Carnaval, 123</p>
+                    <p>📍 C.Obispo Almarcha, 03317 </p>
                 </div>
             </div>
         </div>
@@ -115,7 +115,7 @@ const currentPath = Astro.url.pathname;
         <hr class="border-gray-800 my-8">
 
         <div class="text-center text-sm text-gray-400">
-            <p>&copy; 2025 Comparsa Barrio Fino. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Peña BarrioFino. Todos los derechos reservados.</p>
         </div>
     </div>
 </footer>
