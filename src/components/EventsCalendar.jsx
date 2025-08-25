@@ -8,12 +8,29 @@ const socialLinks = [
     },
     {
         name: 'Facebook',
-        icon: '🔵',
+        icon: (
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22.675 0h-21.35C.6 0 0 .6 0 1.326v21.348C0
+                         23.4.6 24 1.326 24H12.82v-9.294H9.692V11.01h3.128V8.413c0-3.1
+                         1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504
+                         0-1.797.715-1.797 1.763v2.313h3.587l-.467
+                         3.696h-3.12V24h6.116C23.4 24 24 23.4
+                         24 22.674V1.326C24 .6 23.4 0 22.675 0"/>
+            </svg>
+        ),
         getUrl: (eventUrl) => `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(eventUrl)}`,
     },
     {
         name: 'Twitter/X',
-        icon: '⚫',
+        icon: (
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2H21.5l-7.52 8.571L22.75
+                         22h-6.935l-5.437-6.571L4.25
+                         22H1l7.92-9.029L1.25
+                         2h7.07l4.927 5.943L18.244 2zM16.55
+                         20h1.94L8.24 4h-1.97L16.55 20z"/>
+            </svg>
+        ),
         getUrl: (eventUrl, eventTitle) => `https://twitter.com/intent/tweet?url=${encodeURIComponent(eventUrl)}&text=${encodeURIComponent(eventTitle)}`,
     },
     {
@@ -26,7 +43,6 @@ const socialLinks = [
         icon: '✉️',
         getUrl: (eventUrl, eventTitle) => `mailto:?subject=${encodeURIComponent(eventTitle)}&body=${encodeURIComponent(eventUrl)}`,
     },
-    // Instagram no permite compartir directo, pero se puede copiar el link
 ];
 
 const EventsCalendar = () => {

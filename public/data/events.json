@@ -6,7 +6,7 @@
     "time": "21:30",
     "location": "Peña BarrioFino",
     "description": "Trae tu cena y tumbona para disfrutar de una peli con la peña",
-    "image": "/assets/images/events/cine-de-verano.webp"
+    "image": "/assets/images/events/ejemplo.webp"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "time": "23:00",
     "location": "Peña BarrioFino",
     "description": "Ven a cantar con nosotros y pasar un buen rato",
-    "image": "/assets/images/events/karaoke.webp"
+    "image": "/assets/images/events/ejemplo.webp"
   },
   {
       "id": 3,
@@ -24,7 +24,7 @@
       "time": "19:00",
       "location": "Plaza del Pueblo",
       "description": "Participa en nuestro disfraz de mario kart con entrega de premios al mejor disfraz.",
-      "image": "/assets/images/events/desfile-de-disfraces.webp"
+      "image": "/assets/images/events/ejemplo.webp"
   },
   {
       "id": 4,
