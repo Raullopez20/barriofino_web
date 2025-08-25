@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
+import sitemap from "@astrojs/sitemap";
 
 // Configuración para GitHub Pages
 // Cambia 'barrio-fino' por el nombre de tu repositorio
@@ -9,7 +10,8 @@ export default defineConfig({
     base: '/barriofino_web/',
     integrations: [
         react(),
-        tailwind()
+        tailwind(),
+        [sitemap()]
     ],
     output: 'static',
     build: {
