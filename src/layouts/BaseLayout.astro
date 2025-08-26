@@ -4,7 +4,7 @@ export interface Props {
     description?: string;
 }
 
-const { title, description = "PeÃ±a BarrioFino - Fiesta con estilo" } = Astro.props;
+const { title, description = "Peña BarrioFino - Fiesta con estilo" } = Astro.props;
 const currentPath = Astro.url.pathname;
 ---
 
@@ -35,14 +35,14 @@ const currentPath = Astro.url.pathname;
                 <div class="w-12 h-12 bg-black rounded-full flex items-center justify-center">
                     <img src={`${import.meta.env.BASE_URL}icono.webp`} alt="Logo BarrioFino" class="w-10 h-10 rounded-full" />
                 </div>
-                <span class="font-semibold text-lg">PeÃ±a BarrioFino</span>
+                <span class="font-semibold text-lg">Peña BarrioFino</span>
             </a>
 
             <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-8">
                 <a href={`${import.meta.env.BASE_URL}`} class={`hover:text-gray-600 transition-colors ${currentPath === '/' ? 'text-black font-medium' : 'text-gray-700'}`}>Inicio</a>
                 <a href={`${import.meta.env.BASE_URL}historia`} class={`hover:text-gray-600 transition-colors ${currentPath === '/historia' ? 'text-black font-medium' : 'text-gray-700'}`}>Historia</a>
-                <a href={`${import.meta.env.BASE_URL}fotos-videos`} class={`hover:text-gray-600 transition-colors ${currentPath === '/fotos-videos' ? 'text-black font-medium' : 'text-gray-700'}`}>Fotos y VÃ­deos</a>
+                <a href={`${import.meta.env.BASE_URL}fotos-videos`} class={`hover:text-gray-600 transition-colors ${currentPath === '/fotos-videos' ? 'text-black font-medium' : 'text-gray-700'}`}>Fotos y Videos</a>
                 <a href={`${import.meta.env.BASE_URL}eventos`} class={`hover:text-gray-600 transition-colors ${currentPath === '/eventos' ? 'text-black font-medium' : 'text-gray-700'}`}>Eventos</a>
                 <a href={`${import.meta.env.BASE_URL}contacto`} class={`hover:text-gray-600 transition-colors ${currentPath === '/contacto' ? 'text-black font-medium' : 'text-gray-700'}`}>Contacto</a>
             </div>
@@ -60,7 +60,7 @@ const currentPath = Astro.url.pathname;
             <div class="flex flex-col space-y-4">
                 <a href={`${import.meta.env.BASE_URL}`} class="text-gray-700 hover:text-black transition-colors">Inicio</a>
                 <a href={`${import.meta.env.BASE_URL}historia`} class="text-gray-700 hover:text-black transition-colors">Historia</a>
-                <a href={`${import.meta.env.BASE_URL}fotos-videos`} class="text-gray-700 hover:text-black transition-colors">Fotos y VÃ­deos</a>
+                <a href={`${import.meta.env.BASE_URL}fotos-videos`} class="text-gray-700 hover:text-black transition-colors">Fotos y Videos</a>
                 <a href={`${import.meta.env.BASE_URL}eventos`} class="text-gray-700 hover:text-black transition-colors">Eventos</a>
                 <a href={`${import.meta.env.BASE_URL}contacto`} class="text-gray-700 hover:text-black transition-colors">Contacto</a>
             </div>
@@ -77,7 +77,7 @@ const currentPath = Astro.url.pathname;
 <footer class="bg-black text-white py-12">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Logo y descripciÃ³n -->
+            <!-- Logo y descripción -->
             <div>
                 <div class="flex items-center space-x-2 mb-4">
                     <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
@@ -86,16 +86,17 @@ const currentPath = Astro.url.pathname;
                     <span class="font-semibold text-lg">PeÃ±a BarrioFino</span>
                 </div>
                 <p class="text-gray-400 text-sm">
-                    PeÃ±a de pueblo con tradiciÃ³n y estilo. Llevamos la alegrÃ­a y la energia a cada rincÃ³n de la ciudad.
+                    Peña de pueblo con tradicional y estilo. Llevamos la alegría y la energía a cada rincon de la ciudad.
                 </p>
             </div>
 
-            <!-- Enlaces rÃ¡pidos -->
+            <!-- Enlaces rápidos -->
             <div>
-                <h3 class="font-semibold mb-4">Enlaces RÃ¡pidos</h3>
+                <h3 class="font-semibold mb-4">Enlaces Rápidos</h3>
                 <div class="space-y-2">
                     <a href={`${import.meta.env.BASE_URL}`} class="text-gray-400 hover:text-white transition-colors text-sm block">Inicio</a>
                     <a href={`${import.meta.env.BASE_URL}historia`} class="text-gray-400 hover:text-white transition-colors text-sm block">Historia</a>
+                    <a href={`${import.meta.env.BASE_URL}fotos-videos`} class="text-gray-400 hover:text-white transition-colors text-sm block">Fotos y Videos</a>
                     <a href={`${import.meta.env.BASE_URL}eventos`} class="text-gray-400 hover:text-white transition-colors text-sm block">Eventos</a>
                     <a href={`${import.meta.env.BASE_URL}contacto`} class="text-gray-400 hover:text-white transition-colors text-sm block">Contacto</a>
                 </div>
@@ -105,9 +106,8 @@ const currentPath = Astro.url.pathname;
             <div>
                 <h3 class="font-semibold mb-4">Contacto</h3>
                 <div class="space-y-2 text-sm text-gray-400">
-                    <p>ðŸ“§ aj.barrifino2023@gmail.com</p>
-                    <!-- <p>ðŸ“ž +34 123 456 789</p> -->
-                    <p>ðŸ“ C.Obispo Almarcha, 03317 </p>
+                    <p>✉️ aj.barrifino2023@gmail.com</p>
+                    <p>🌆 C.Obispo Almarcha, 03317 </p>
                 </div>
             </div>
         </div>
@@ -115,7 +115,7 @@ const currentPath = Astro.url.pathname;
         <hr class="border-gray-800 my-8">
 
         <div class="text-center text-sm text-gray-400">
-            <p>&copy; 2025 PeÃ±a BarrioFino. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Peña BarrioFino. Todos los derechos reservados.</p>
         </div>
     </div>
 </footer>
