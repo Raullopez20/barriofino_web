@@ -1,0 +1,51 @@
+{
+  "albums": [
+    {
+      "name": "desfile_de_disfraces_2024",
+      "type": "fotos",
+      "items": [
+        {
+          "src": "/barriofino_web/assets/images/gallery/desfile_de_disfraces_2024/ejemplo1.jpg",
+          "alt": "ejemplo1.jpg",
+          "title": "ejemplo1.jpg",
+          "year": "2024",
+          "id": 1
+        },
+        {
+          "src": "/barriofino_web/assets/images/gallery/desfile_de_disfraces_2024/ejemplo1.webp",
+          "alt": "ejemplo1.webp",
+          "title": "ejemplo1.webp",
+          "year": "2024",
+          "id": 2
+        }
+      ]
+    },
+    {
+      "name": "desfile_de_disfraces_2025",
+      "type": "fotos",
+      "items": [
+        {
+          "src": "/barriofino_web/assets/images/gallery/desfile_de_disfraces_2025/ejemplo1.webp",
+          "alt": "ejemplo1.webp",
+          "title": "ejemplo1.webp",
+          "year": "2025",
+          "id": 1
+        }
+      ]
+    },
+    {
+      "name": "desfile_de_disfraces_2024",
+      "type": "videos",
+      "items": [
+        {
+          "src": "/barriofino_web/assets/videos/desfile_de_disfraces_2024/video1.mp4",
+          "poster": "/barriofino_web/assets/images/video-thumbs/desfile_de_disfraces_2024/video1.jpg",
+          "title": "video1.mp4",
+          "year": "2024",
+          "duration": "",
+          "id": 1
+        }
+      ]
+    }
+  ]
+}

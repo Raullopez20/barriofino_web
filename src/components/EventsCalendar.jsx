@@ -620,7 +620,7 @@ const EventsCalendar = () => {
                 </div>
             )}
 
-            {/* Sección informativa para administradores - mejorada */}
+            {/* Sección informativa para administradores - mejorada
             <div className="mt-16 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 border border-gray-200">
                 <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
@@ -659,15 +659,15 @@ const EventsCalendar = () => {
                             <span className="ml-2">Estructura del evento</span>
                         </h4>
                         <pre className="bg-gray-50 p-4 rounded-lg text-xs font-mono overflow-x-auto text-gray-800 leading-relaxed">
-{`{
-  "id": 1,
-  "title": "Nombre del evento",
-  "date": "2025-02-15",
-  "time": "18:00",
-  "location": "Ubicación",
-  "description": "Descripción...",
-  "image": "/assets/images/..."
-}`}
+                            {`{
+                              "id": 1,
+                              "title": "Nombre del evento",
+                              "date": "2025-02-15",
+                              "time": "18:00",
+                              "location": "Ubicación",
+                              "description": "Descripción...",
+                              "image": "/assets/images/..."
+                            }`}
                         </pre>
                     </div>
                 </div>
@@ -686,7 +686,7 @@ const EventsCalendar = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>*/}
         </div>
     );
 };
