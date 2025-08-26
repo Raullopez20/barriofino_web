@@ -108,6 +108,8 @@ const EventsCalendar = () => {
     const [filter, setFilter] = useState('todos');
     const [modalInfo, setModalInfo] = useState(null);
     const [copied, setCopied] = useState(false);
+    // Estado para imagen ampliada
+    const [expandedImage, setExpandedImage] = useState(null);
 
     useEffect(() => {
         const loadEvents = async () => {
@@ -392,9 +394,12 @@ const EventsCalendar = () => {
                                 <div className="p-6">
                                     {/* Imagen del evento */}
                                     {modalInfo.event.image && (
-                                        <div className="mb-6 rounded-xl overflow-hidden">
+                                        <div
+                                            className="mb-6 rounded-xl overflow-hidden cursor-zoom-in"
+                                            onClick={() => setExpandedImage(import.meta.env.BASE_URL + modalInfo.event.image.replace(/^\//, ''))}
+                                        >
                                             <img
-                                                src={`${import.meta.env.BASE_URL}${modalInfo.event.image.replace(/^\//, '')}`}
+                                                src={import.meta.env.BASE_URL + modalInfo.event.image.replace(/^\//, '')}
                                                 alt={modalInfo.event.title}
                                                 className="w-full h-64 sm:h-80 object-cover"
                                             />
@@ -578,6 +583,33 @@ const EventsCalendar = () => {
                                 </div>
                             )}
                         </div>
+                    </div>
+                </div>
+            )}
+
+            {/* MODAL DE IMAGEN AMPLIADA */}
+            {expandedImage && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+                    {/* Overlay oscuro y cierre al hacer click */}
+                    <div
+                        className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+                        onClick={() => setExpandedImage(null)}
+                    ></div>
+                    {/* Imagen ampliada centrada y responsive */}
+                    <div className="relative flex items-center justify-center w-full h-full">
+                        <img
+                            src={expandedImage}
+                            alt="Evento ampliado"
+                            className="max-w-full max-h-[90vh] rounded-2xl shadow-2xl object-contain"
+                            style={{ margin: 'auto' }}
+                        />
+                        <button
+                            className="absolute top-4 right-4 p-2 bg-white/80 rounded-full shadow hover:bg-white"
+                            onClick={() => setExpandedImage(null)}
+                            aria-label="Cerrar imagen ampliada"
+                        >
+                            <Icons.Close />
+                        </button>
                     </div>
                 </div>
             )}
