@@ -1,6 +1,6 @@
-# 🎭 Sitio Web Comparsa Barrio Fino
+# 🎭 Sitio Web Peña BarrioFino
 
-Sitio web profesional para la **Comparsa Barrio Fino** desarrollado con **Astro + React**, diseñado para ser rápido, responsive y fácil de mantener.
+Sitio web profesional para la **Peña BarrioFino** desarrollado con **Astro + React**, diseñado para ser rápido, responsive y fácil de mantener.
 
 ## 🚀 Tecnologías Utilizadas
 
@@ -33,7 +33,7 @@ barrio-fino/
 │   │   └── BaseLayout.astro      # Layout principal
 │   └── pages/
 │       ├── index.astro           # Página de inicio
-│       ├── historia.astro        # Historia de la comparsa
+│       ├── historia.astro        # Historia de la peña
 │       ├── fotos-videos.astro    # Galería multimedia
 │       ├── eventos.astro         # Eventos y calendario
 │       └── contacto.astro        # Página de contacto
@@ -122,7 +122,7 @@ barrio-fino/
 
 ### Configuración Inicial
 1. **Crear repositorio en GitHub**
-    - Nombre sugerido: `barrio-fino` o `comparsa-barrio-fino`
+    - Nombre sugerido: `barrio-fino` o `peña-barrio-fino`
 
 2. **Configurar GitHub Pages**
     - Ve a Settings → Pages
@@ -229,8 +229,8 @@ npm run deploy
 
 ## 📄 Licencia
 
-Este proyecto está desarrollado específicamente para la **Comparsa Barrio Fino**.
+Este proyecto está desarrollado específicamente para la **Peña Barrio Fino**.
 
 ---
 
-**Desarrollado con ❤️ para la Comparsa Barrio Fino**
+**Desarrollado con ❤️ para la Peña BarrioFino**

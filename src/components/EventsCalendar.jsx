@@ -126,7 +126,7 @@ const EventsCalendar = () => {
                         date: "2025-02-15",
                         time: "18:00",
                         location: "Plaza Mayor",
-                        description: "Salida oficial de la comparsa Barrio Fino en el gran desfile de carnaval.",
+                        description: "Salida oficial de la peña BarrioFino en el gran desfile de carnaval.",
                         image: "/assets/images/events/desfile-2025.jpg"
                     },
                     {
@@ -134,7 +134,7 @@ const EventsCalendar = () => {
                         title: "Ensayo General",
                         date: "2025-02-10",
                         time: "20:00",
-                        location: "Local de la Comparsa",
+                        location: "Local de la Peña",
                         description: "Ensayo abierto al público. Ven a conocer nuestras coreografías.",
                         image: "/assets/images/events/ensayo.jpg"
                     }

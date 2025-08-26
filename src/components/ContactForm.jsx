@@ -228,7 +228,7 @@ const ContactForm = () => {
                         >
                             <option value="">Selecciona un tema</option>
                             <option value="info-general">Información general</option>
-                            <option value="unirse-comparsa">Unirse a la comparsa</option>
+                            <option value="unirse-comparsa">Unirse a la peña</option>
                             <option value="eventos">Consulta sobre eventos</option>
                             <option value="colaboracion">Propuesta de colaboración</option>
                             <option value="medios">Medios de comunicación</option>
