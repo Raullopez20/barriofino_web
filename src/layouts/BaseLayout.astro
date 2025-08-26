@@ -360,81 +360,74 @@ const currentPath = Astro.url.pathname;
 </footer>
 
 <!-- AOS JavaScript -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js" is:global></script>
-<script is:global>
-document.addEventListener('DOMContentLoaded', () => {
-    // Initialize AOS
-            if (window.AOS) {
-        window.AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true,
-            offset: 50,
-            disable: false
-        });
-    }
+<script>
+  import AOS from 'aos';
+  import 'aos/dist/aos.css';
 
-    // Mobile menu toggle
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
+  document.addEventListener('DOMContentLoaded', () => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      offset: 50,
+      disable: false,
+    });
+
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
     const menuOpen = document.getElementById('menu-open');
     const menuClose = document.getElementById('menu-close');
 
-    if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener('click', () => {
-            const isHidden = mobileMenu.classList.contains('hidden');
+    if (mobileMenuButton && mobileMenu && menuOpen && menuClose) {
+      mobileMenuButton.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
 
-            if (isHidden) {
-                mobileMenu.classList.remove('hidden');
-                menuOpen.classList.add('hidden');
-                menuClose.classList.remove('hidden');
-            } else {
-                mobileMenu.classList.add('hidden');
-                menuOpen.classList.remove('hidden');
-                menuClose.classList.add('hidden');
-            }
-        });
+        if (isHidden) {
+          mobileMenu.classList.remove('hidden');
+          menuOpen.classList.add('hidden');
+          menuClose.classList.remove('hidden');
+        } else {
+          mobileMenu.classList.add('hidden');
+          menuOpen.classList.remove('hidden');
+          menuClose.classList.add('hidden');
+        }
+      });
 
-        // Close mobile menu when clicking on links
-                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                menuOpen.classList.remove('hidden');
-                menuClose.classList.add('hidden');
-            });
+      const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+      mobileMenuLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuOpen.classList.remove('hidden');
+          menuClose.classList.add('hidden');
         });
+      });
     }
 
-    // Navbar scroll effect
-            const navbar = document.getElementById('navbar');
+    const navbar = document.getElementById('navbar');
     let lastScrollY = window.scrollY;
 
     window.addEventListener('scroll', () => {
-        const currentScrollY = window.scrollY;
+      const currentScrollY = window.scrollY;
 
-        if (navbar) {
-            if (currentScrollY > lastScrollY && currentScrollY > 100) {
-                // Scrolling down - hide navbar
-                        navbar.style.transform = 'translateY(-100%)';
-            } else {
-                // Scrolling up - show navbar
-                        navbar.style.transform = 'translateY(0)';
-            }
-
-            // Add background blur on scroll
-                    if (currentScrollY > 50) {
-                navbar.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-lg');
-                navbar.classList.remove('bg-white/90');
-            } else {
-                navbar.classList.add('bg-white/90');
-                navbar.classList.remove('bg-white/95', 'backdrop-blur-md', 'shadow-lg');
-            }
+      if (navbar) {
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+          navbar.style.transform = 'translateY(-100%)';
+        } else {
+          navbar.style.transform = 'translateY(0)';
         }
 
-        lastScrollY = currentScrollY;
+        if (currentScrollY > 50) {
+          navbar.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-lg');
+          navbar.classList.remove('bg-white/90');
+        } else {
+          navbar.classList.add('bg-white/90');
+          navbar.classList.remove('bg-white/95', 'backdrop-blur-md', 'shadow-lg');
+        }
+      }
+
+      lastScrollY = currentScrollY;
     });
-});
+  });
 </script>
 </body>
 </html>
