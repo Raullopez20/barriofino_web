@@ -258,7 +258,7 @@ const EventsCalendar = () => {
                     </p>
                 </div>
             ) : (
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                     {sortedEvents.map((event, index) => (
                         <div
                             key={event.id}
@@ -295,12 +295,18 @@ const EventsCalendar = () => {
                             </div>
 
                             {/* Contenido del evento */}
-                            <div className="p-6">
+                            <div className="p-4 sm:p-6">
                                 {/* Fecha y hora */}
-                                <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 mb-4">
+                                <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-600 mb-2 sm:mb-4">
                                     <div className="flex items-center">
                                         <Icons.Calendar />
-                                        <span className="ml-2 capitalize font-medium">{formatDate(event.date)}</span>
+                                        {/* Fecha corta en móvil, completa en desktop */}
+                                        <span className="ml-2 font-medium block sm:hidden">
+                                            {new Date(event.date).toLocaleDateString('es-ES', { day: '2-digit', month: 'short' })}
+                                        </span>
+                                        <span className="ml-2 capitalize font-medium hidden sm:block">
+                                            {formatDate(event.date)}
+                                        </span>
                                     </div>
                                     {event.time && (
                                         <div className="flex items-center">
@@ -311,18 +317,18 @@ const EventsCalendar = () => {
                                 </div>
 
                                 {/* Título */}
-                                <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
+                                <h3 className="text-sm sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 line-clamp-2">
                                     {event.title}
                                 </h3>
 
-                                {/* Descripción */}
-                                <p className="text-gray-600 mb-4 leading-relaxed line-clamp-3">
+                                {/* Descripción resumida solo en desktop */}
+                                <p className="hidden sm:block text-gray-600 mb-4 leading-relaxed line-clamp-3">
                                     {event.description}
                                 </p>
 
-                                {/* Ubicación */}
+                                {/* Ubicación solo en desktop */}
                                 {event.location && (
-                                    <div className="flex items-center text-sm text-gray-600 mb-6 p-3 bg-gray-50 rounded-lg">
+                                    <div className="hidden sm:flex items-center text-sm text-gray-600 mb-6 p-3 bg-gray-50 rounded-lg">
                                         <Icons.Location />
                                         <span className="ml-2 font-medium">{event.location}</span>
                                     </div>
@@ -333,14 +339,14 @@ const EventsCalendar = () => {
                                     {isUpcoming(event.date) ? (
                                         <>
                                             <button
-                                                className="flex-1 flex items-center justify-center bg-black text-white px-4 py-3 rounded-xl hover:bg-gray-800 transition-colors font-medium text-sm shadow-lg hover:shadow-xl"
+                                                className="flex-1 flex items-center justify-center bg-black text-white px-4 py-2 sm:px-4 sm:py-3 rounded-xl hover:bg-gray-800 transition-colors font-medium text-xs sm:text-sm shadow-lg hover:shadow-xl"
                                                 onClick={() => setModalInfo({ type: 'info', event })}
                                             >
                                                 <Icons.Info />
                                                 <span className="ml-2">Más Información</span>
                                             </button>
                                             <button
-                                                className="flex items-center justify-center px-4 py-3 border-2 border-gray-300 text-gray-700 rounded-xl hover:border-gray-400 hover:bg-gray-50 transition-all font-medium text-sm"
+                                                className="flex items-center justify-center px-4 py-2 sm:px-4 sm:py-3 border-2 border-gray-300 text-gray-700 rounded-xl hover:border-gray-400 hover:bg-gray-50 transition-all font-medium text-xs sm:text-sm"
                                                 onClick={() => setModalInfo({ type: 'share', event })}
                                             >
                                                 <Icons.Share />
@@ -350,7 +356,7 @@ const EventsCalendar = () => {
                                     ) : (
                                         <a
                                             href={`${import.meta.env.BASE_URL}fotos-videos`}
-                                            className="flex-1 flex items-center justify-center bg-gray-100 text-gray-700 px-4 py-3 rounded-xl hover:bg-gray-200 transition-colors font-medium text-sm"
+                                            className="flex-1 flex items-center justify-center bg-gray-100 text-gray-700 px-4 py-2 sm:px-4 sm:py-3 rounded-xl hover:bg-gray-200 transition-colors font-medium text-xs sm:text-sm"
                                         >
                                             <Icons.Gallery />
                                             <span className="ml-2">Ver Galería</span>
