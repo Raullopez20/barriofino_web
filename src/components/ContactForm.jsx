@@ -16,9 +16,9 @@ const ContactForm = () => {
     const [errors, setErrors] = useState({});
 
     // Configuración de EmailJS - Reemplaza con tus propios IDs
-    const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
-    const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-    const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+    const EMAILJS_SERVICE_ID = 'service_yr7xdu8';
+    const EMAILJS_TEMPLATE_ID = 'template_kvqxnmu';
+    const EMAILJS_PUBLIC_KEY = 'R0ePa6OQMQCqpZWnO';
 
     const validateForm = () => {
         const newErrors = {};
