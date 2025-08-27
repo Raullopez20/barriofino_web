@@ -62,11 +62,11 @@
       ]
     },
     {
-      "name": "romería_de_2023",
+      "name": "romeria_de_2023",
       "type": "fotos",
       "items": [
         {
-          "src": "/assets/images/gallery/romería_de_2023/romería-2023-001.webp",
+          "src": "/assets/images/gallery/romeria_de_2023/romería-2023-001.webp",
           "alt": "romería-2023-001.webp",
           "title": "romería-2023-001.webp",
           "year": "2023",
@@ -75,18 +75,18 @@
       ]
     },
     {
-      "name": "romería_de_2025",
+      "name": "romeria_de_2025",
       "type": "fotos",
       "items": [
         {
-          "src": "/assets/images/gallery/romería_de_2025/romería-2025-001.webp",
+          "src": "/assets/images/gallery/romeria_de_2025/romería-2025-001.webp",
           "alt": "romería-2025-001.webp",
           "title": "romería-2025-001.webp",
           "year": "2025",
           "id": 1
         },
         {
-          "src": "/assets/images/gallery/romería_de_2025/romería-2025-002.webp",
+          "src": "/assets/images/gallery/romeria_de_2025/romería-2025-002.webp",
           "alt": "romería-2025-002.webp",
           "title": "romería-2025-002.webp",
           "year": "2025",
