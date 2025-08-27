@@ -7,7 +7,7 @@ const Gallery = () => {
 
     // Cargar datos reales desde gallery.json
     useEffect(() => {
-        fetch('/barriofino_web/data/gallery.json')
+        fetch(`${import.meta.env.BASE_URL}data/gallery.json`)
             .then(res => res.json())
             .then(data => {
                 setGalleryAlbums(data.albums || []);
