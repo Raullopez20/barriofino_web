@@ -18,7 +18,7 @@ const Gallery = () => {
     const fotosAlbums = galleryAlbums.filter(a => a.type === 'fotos');
     const videosAlbums = galleryAlbums.filter(a => a.type === 'videos');
 
-    const resolveImagePath = (path) => `${import.meta.env.BASE_URL}assets/images/gallery/${path}`;
+    const resolveImagePath = (path) => `${import.meta.env.BASE_URL}${path}`;
 
     const openLightbox = (media) => {
         setSelectedMedia(media);
@@ -86,7 +86,7 @@ const Gallery = () => {
                                     onClick={() => openLightbox(foto)}
                                 >
                                     <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
-                                        <img src={resolveImagePath(`${album.name}/${foto.src}`)} alt={foto.alt} className="h-64 w-full object-cover" />
+                                        <img src={resolveImagePath(foto.src)} alt={foto.alt} className="h-64 w-full object-cover" />
                                         <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
                                             <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
                                                 <div className="bg-white rounded-lg p-4 text-center">
@@ -118,7 +118,7 @@ const Gallery = () => {
                                     onClick={() => openLightbox(video)}
                                 >
                                     <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
-                                        <img src={resolveImagePath(`${album.name}/${video.poster}`)} alt={video.title} className="h-48 w-full object-cover" />
+                                        <img src={resolveImagePath(video.poster)} alt={video.title} className="h-48 w-full object-cover" />
                                         <div className="absolute inset-0 flex items-center justify-center">
                                             <div className="w-16 h-16 bg-black bg-opacity-70 rounded-full flex items-center justify-center group-hover:bg-opacity-90 transition-colors">
                                                 <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
