@@ -15,9 +15,9 @@ const ContactForm = () => {
     const [submitStatus, setSubmitStatus] = useState(null);
     const [errors, setErrors] = useState({});
 
-    // Configuración de EmailJS - Reemplaza con tus propios IDs
-    const EMAILJS_SERVICE_ID = 'service_yr7xdu8';
-    const EMAILJS_TEMPLATE_ID = 'template_kvqxnmu';
+    // Configuración de EmailJS - usando los IDs exactos de tu prueba
+    const EMAILJS_SERVICE_ID = 'service_yr7xdu8';  // Cambiado de vuelta al original
+    const EMAILJS_TEMPLATE_ID = 'template_kvqxnmu';  // Cambiado de vuelta al original
     const EMAILJS_PUBLIC_KEY = 'R0ePa6OQMQCqpZWnO';
 
     const validateForm = () => {
@@ -71,32 +71,28 @@ const ContactForm = () => {
         setSubmitStatus(null);
 
         try {
-            // Para integrar EmailJS, descomenta esto y configura tus credenciales:
-            /*
+            // Configuración de EmailJS - nombres exactos según tu plantilla HTML
             const templateParams = {
                 from_name: formData.name,
                 from_email: formData.email,
                 phone: formData.phone || 'No proporcionado',
                 subject: formData.subject,
-                message: formData.message,
                 interest: formData.interest || 'No especificado',
-                to_name: 'Peña BarrioFino',
-                reply_to: formData.email
+                message: formData.message
             };
 
-            await emailjs.send(
+            // Envío con EmailJS usando los parámetros correctos
+            const response = await emailjs.send(
                 EMAILJS_SERVICE_ID,
                 EMAILJS_TEMPLATE_ID,
                 templateParams,
                 EMAILJS_PUBLIC_KEY
             );
-            */
 
-            // Simulación temporal - eliminar cuando uses EmailJS real
-            await new Promise(resolve => setTimeout(resolve, 2000));
-
+            console.log('Email enviado exitosamente:', response);
             setSubmitStatus('success');
 
+            // Limpiar formulario después del envío exitoso
             setFormData({
                 name: '',
                 email: '',
@@ -401,4 +397,5 @@ const ContactForm = () => {
         </div>
     );
 };
+
 export default ContactForm;
