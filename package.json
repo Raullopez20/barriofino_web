@@ -7,8 +7,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "deploy": "npm run build && gh-pages -d dist"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/react": "^3.0.9",
@@ -26,7 +25,6 @@
     "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
-    "@types/aos": "^3.0.7",
-    "gh-pages": "^6.3.0"
+    "@types/aos": "^3.0.7"
   }
 }

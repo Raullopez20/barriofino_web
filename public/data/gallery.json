@@ -5,18 +5,11 @@
       "type": "fotos",
       "items": [
         {
-          "src": "/barriofino_web/assets/images/gallery/desfile_de_disfraces_2024/ejemplo1.jpg",
-          "alt": "ejemplo1.jpg",
-          "title": "ejemplo1.jpg",
-          "year": "2024",
-          "id": 1
-        },
-        {
           "src": "/barriofino_web/assets/images/gallery/desfile_de_disfraces_2024/ejemplo1.webp",
           "alt": "ejemplo1.webp",
           "title": "ejemplo1.webp",
           "year": "2024",
-          "id": 2
+          "id": 1
         }
       ]
     },
