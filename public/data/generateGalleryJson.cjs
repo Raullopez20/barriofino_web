@@ -15,7 +15,7 @@ function getAlbums(dir) {
 function getImages(albumDir, albumName) {
     const files = fs.readdirSync(albumDir);
     return files.filter(f => /\.(jpg|jpeg|png|webp)$/i.test(f)).map((file, idx) => ({
-        src: `/barriofino_web/assets/images/gallery/${albumName}/${file}`,
+        src: `/assets/images/gallery/${albumName}/${file}`,
         alt: file,
         title: file,
         year: albumName.match(/\d{4}/) ? albumName.match(/\d{4}/)[0] : '',
@@ -26,9 +26,9 @@ function getImages(albumDir, albumName) {
 function getVideos(albumDir, albumName) {
     const files = fs.readdirSync(albumDir);
     return files.filter(f => /\.(mp4)$/i.test(f)).map((file, idx) => {
-        const thumb = `/barriofino_web/assets/images/video-thumbs/${albumName}/${file.replace(/\.mp4$/, '.jpg')}`;
+        const thumb = `/assets/images/video-thumbs/${albumName}/${file.replace(/\.mp4$/, '.jpg')}`;
         return {
-            src: `/barriofino_web/assets/videos/${albumName}/${file}`,
+            src: `/assets/videos/${albumName}/${file}`,
             poster: thumb,
             title: file,
             year: albumName.match(/\d{4}/) ? albumName.match(/\d{4}/)[0] : '',
