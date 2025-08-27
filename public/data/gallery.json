@@ -1,14 +1,14 @@
 {
   "albums": [
     {
-      "name": "romeria_de_2023",
+      "name": "romeria_de_2024",
       "type": "fotos",
       "items": [
         {
-          "src": "/assets/images/gallery/romeria_de_2023/romería-2023-001.webp",
-          "alt": "romería-2023-001.webp",
-          "title": "romería-2023-001.webp",
-          "year": "2023",
+          "src": "/assets/images/gallery/romeria_de_2024/romería-2024-001.webp",
+          "alt": "romería-2024-001.webp",
+          "title": "romería-2024-001.webp",
+          "year": "2024",
           "id": 1
         }
       ]
