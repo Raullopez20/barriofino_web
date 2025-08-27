@@ -1,67 +1,6 @@
 {
   "albums": [
     {
-      "name": "fiestas_de_septiembre_de_2023",
-      "type": "fotos",
-      "items": [
-        {
-          "src": "/assets/images/gallery/fiestas_de_septiembre_de_2023/fiestas-septiembre-2023-001.webp",
-          "alt": "fiestas-septiembre-2023-001.webp",
-          "title": "fiestas-septiembre-2023-001.webp",
-          "year": "2023",
-          "id": 1
-        },
-        {
-          "src": "/assets/images/gallery/fiestas_de_septiembre_de_2023/fiestas-septiembre-2023-002.webp",
-          "alt": "fiestas-septiembre-2023-002.webp",
-          "title": "fiestas-septiembre-2023-002.webp",
-          "year": "2023",
-          "id": 2
-        },
-        {
-          "src": "/assets/images/gallery/fiestas_de_septiembre_de_2023/fiestas-septiembre-2023-003.webp",
-          "alt": "fiestas-septiembre-2023-003.webp",
-          "title": "fiestas-septiembre-2023-003.webp",
-          "year": "2023",
-          "id": 3
-        }
-      ]
-    },
-    {
-      "name": "fiestas_de_septiembre_de_2024",
-      "type": "fotos",
-      "items": [
-        {
-          "src": "/assets/images/gallery/fiestas_de_septiembre_de_2024/fiestas-septiembre-2024-001.webp",
-          "alt": "fiestas-septiembre-2024-001.webp",
-          "title": "fiestas-septiembre-2024-001.webp",
-          "year": "2024",
-          "id": 1
-        },
-        {
-          "src": "/assets/images/gallery/fiestas_de_septiembre_de_2024/fiestas-septiembre-2024-002.webp",
-          "alt": "fiestas-septiembre-2024-002.webp",
-          "title": "fiestas-septiembre-2024-002.webp",
-          "year": "2024",
-          "id": 2
-        },
-        {
-          "src": "/assets/images/gallery/fiestas_de_septiembre_de_2024/fiestas-septiembre-2024-003.webp",
-          "alt": "fiestas-septiembre-2024-003.webp",
-          "title": "fiestas-septiembre-2024-003.webp",
-          "year": "2024",
-          "id": 3
-        },
-        {
-          "src": "/assets/images/gallery/fiestas_de_septiembre_de_2024/fiestas-septiembre-2024-004.webp",
-          "alt": "fiestas-septiembre-2024-004.webp",
-          "title": "fiestas-septiembre-2024-004.webp",
-          "year": "2024",
-          "id": 4
-        }
-      ]
-    },
-    {
       "name": "romeria_de_2023",
       "type": "fotos",
       "items": [
@@ -91,6 +30,67 @@
           "title": "romería-2025-002.webp",
           "year": "2025",
           "id": 2
+        }
+      ]
+    },
+    {
+      "name": "septiembre_de_2023",
+      "type": "fotos",
+      "items": [
+        {
+          "src": "/assets/images/gallery/septiembre_de_2023/fiestas-septiembre-2023-001.webp",
+          "alt": "fiestas-septiembre-2023-001.webp",
+          "title": "fiestas-septiembre-2023-001.webp",
+          "year": "2023",
+          "id": 1
+        },
+        {
+          "src": "/assets/images/gallery/septiembre_de_2023/fiestas-septiembre-2023-002.webp",
+          "alt": "fiestas-septiembre-2023-002.webp",
+          "title": "fiestas-septiembre-2023-002.webp",
+          "year": "2023",
+          "id": 2
+        },
+        {
+          "src": "/assets/images/gallery/septiembre_de_2023/fiestas-septiembre-2023-003.webp",
+          "alt": "fiestas-septiembre-2023-003.webp",
+          "title": "fiestas-septiembre-2023-003.webp",
+          "year": "2023",
+          "id": 3
+        }
+      ]
+    },
+    {
+      "name": "septiembre_de_2024",
+      "type": "fotos",
+      "items": [
+        {
+          "src": "/assets/images/gallery/septiembre_de_2024/fiestas-septiembre-2024-001.webp",
+          "alt": "fiestas-septiembre-2024-001.webp",
+          "title": "fiestas-septiembre-2024-001.webp",
+          "year": "2024",
+          "id": 1
+        },
+        {
+          "src": "/assets/images/gallery/septiembre_de_2024/fiestas-septiembre-2024-002.webp",
+          "alt": "fiestas-septiembre-2024-002.webp",
+          "title": "fiestas-septiembre-2024-002.webp",
+          "year": "2024",
+          "id": 2
+        },
+        {
+          "src": "/assets/images/gallery/septiembre_de_2024/fiestas-septiembre-2024-003.webp",
+          "alt": "fiestas-septiembre-2024-003.webp",
+          "title": "fiestas-septiembre-2024-003.webp",
+          "year": "2024",
+          "id": 3
+        },
+        {
+          "src": "/assets/images/gallery/septiembre_de_2024/fiestas-septiembre-2024-004.webp",
+          "alt": "fiestas-septiembre-2024-004.webp",
+          "title": "fiestas-septiembre-2024-004.webp",
+          "year": "2024",
+          "id": 4
         }
       ]
     },
