@@ -18,7 +18,7 @@ const Gallery = () => {
     const fotosAlbums = galleryAlbums.filter(a => a.type === 'fotos');
     const videosAlbums = galleryAlbums.filter(a => a.type === 'videos');
 
-    const resolveImagePath = (path) => `${import.meta.env.BASE_URL}${path}`;
+    const resolveImagePath = (path) => `${import.meta.env.BASE_URL.replace(/\/$/, '')}${path}`;
 
     const openLightbox = (media) => {
         setSelectedMedia(media);
