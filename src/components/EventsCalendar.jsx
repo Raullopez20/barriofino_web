@@ -122,11 +122,11 @@ const EventsCalendar = () => {
                 setEvents([
                     {
                         id: 1,
-                        title: "Desfile de Carnaval 2025",
+                        title: "Desfile de la peña 2025",
                         date: "2025-02-15",
                         time: "18:00",
                         location: "Plaza Mayor",
-                        description: "Salida oficial de la peña BarrioFino en el gran desfile de carnaval.",
+                        description: "Salida oficial de la peña BarrioFino en el gran desfile de disfraces.",
                         image: "/assets/images/events/desfile-2025.jpg"
                     },
                     {
