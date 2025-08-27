@@ -1,27 +1,95 @@
 {
   "albums": [
     {
-      "name": "desfile_de_disfraces_2024",
+      "name": "fiestas_de_septiembre_de_2023",
       "type": "fotos",
       "items": [
         {
-          "src": "/assets/images/gallery/desfile_de_disfraces_2024/ejemplo1.webp",
-          "alt": "ejemplo1.webp",
-          "title": "ejemplo1.webp",
-          "year": "2024",
+          "src": "/assets/images/gallery/fiestas_de_septiembre_de_2023/fiestas-septiembre-2023-001.jpeg",
+          "alt": "fiestas-septiembre-2023-001.jpeg",
+          "title": "fiestas-septiembre-2023-001.jpeg",
+          "year": "2023",
           "id": 1
+        },
+        {
+          "src": "/assets/images/gallery/fiestas_de_septiembre_de_2023/fiestas-septiembre-2023-002.jpeg",
+          "alt": "fiestas-septiembre-2023-002.jpeg",
+          "title": "fiestas-septiembre-2023-002.jpeg",
+          "year": "2023",
+          "id": 2
+        },
+        {
+          "src": "/assets/images/gallery/fiestas_de_septiembre_de_2023/fiestas-septiembre-2023-003.jpeg",
+          "alt": "fiestas-septiembre-2023-003.jpeg",
+          "title": "fiestas-septiembre-2023-003.jpeg",
+          "year": "2023",
+          "id": 3
         }
       ]
     },
     {
-      "name": "desfile_de_disfraces_2025",
+      "name": "fiestas_de_septiembre_de_2024",
       "type": "fotos",
       "items": [
         {
-          "src": "/assets/images/gallery/desfile_de_disfraces_2025/ejemplo1.webp",
-          "alt": "ejemplo1.webp",
-          "title": "ejemplo1.webp",
+          "src": "/assets/images/gallery/fiestas_de_septiembre_de_2024/fiestas-septiembre-2024-001.jpeg",
+          "alt": "fiestas-septiembre-2024-001.jpeg",
+          "title": "fiestas-septiembre-2024-001.jpeg",
+          "year": "2024",
+          "id": 1
+        },
+        {
+          "src": "/assets/images/gallery/fiestas_de_septiembre_de_2024/fiestas-septiembre-2024-002.jpeg",
+          "alt": "fiestas-septiembre-2024-002.jpeg",
+          "title": "fiestas-septiembre-2024-002.jpeg",
+          "year": "2024",
+          "id": 2
+        },
+        {
+          "src": "/assets/images/gallery/fiestas_de_septiembre_de_2024/fiestas-septiembre-2024-003.jpeg",
+          "alt": "fiestas-septiembre-2024-003.jpeg",
+          "title": "fiestas-septiembre-2024-003.jpeg",
+          "year": "2024",
+          "id": 3
+        },
+        {
+          "src": "/assets/images/gallery/fiestas_de_septiembre_de_2024/fiestas-septiembre-2024-004.jpeg",
+          "alt": "fiestas-septiembre-2024-004.jpeg",
+          "title": "fiestas-septiembre-2024-004.jpeg",
+          "year": "2024",
+          "id": 4
+        }
+      ]
+    },
+    {
+      "name": "romeria_de_2025",
+      "type": "fotos",
+      "items": [
+        {
+          "src": "/assets/images/gallery/romeria_de_2025/romería-2025-001.jpeg",
+          "alt": "romería-2025-001.jpeg",
+          "title": "romería-2025-001.jpeg",
           "year": "2025",
+          "id": 1
+        },
+        {
+          "src": "/assets/images/gallery/romeria_de_2025/romería-2025-002.jpeg",
+          "alt": "romería-2025-002.jpeg",
+          "title": "romería-2025-002.jpeg",
+          "year": "2025",
+          "id": 2
+        }
+      ]
+    },
+    {
+      "name": "romería_de_2023",
+      "type": "fotos",
+      "items": [
+        {
+          "src": "/assets/images/gallery/romería_de_2023/romería-2023-001.jpeg",
+          "alt": "romería-2023-001.jpeg",
+          "title": "romería-2023-001.jpeg",
+          "year": "2023",
           "id": 1
         }
       ]
