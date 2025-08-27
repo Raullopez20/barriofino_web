@@ -4,8 +4,8 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-    site: 'https://barriofino.netlify.app/barriofino_web',
-    base: '/barriofino_web/',
+    site: 'https://barriofino.netlify.app',
+    base: '/',
     output: 'static',
     integrations: [
         react(),
